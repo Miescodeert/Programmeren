@@ -1,0 +1,57 @@
+body {
+  background-color: #f7e7f6;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Code voor afbeelding centreren afkomstig van https://www.scaler.com/topics/how-to-center-an-image-in-html/ */
+img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+/*Code voor flexbox aan de hand van Flexbox Froggy gemaakt. https://flexboxfroggy.com/#nl*/
+.ButtonVerzameling {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 20px;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background-color: rgba(229, 122, 233, 0.291);
+}
+
+/*Extra hulp over hover kleur gevraagd aan Chat GPT. Prompt: 'de laatste button die disabeld is wordt nog wel donker roze als ik erover heen hover. Hoe los ik dit op?''*/
+button:not(:disabled):hover {
+  background-color: rgb(233, 122, 181);
+}
+
+.Daten {
+  background-color: rgba(150, 222, 165, 0.664);
+}
+
+/* Specifieke hover-stijl voor de enabled "Naar de date!" knop */
+.Daten.hover-enabled:hover {
+  background-color: rgb(82, 164, 69);
+}
+
+.HerlaadPagina {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background-color: rgba(96, 177, 209, 0.5);
+}
